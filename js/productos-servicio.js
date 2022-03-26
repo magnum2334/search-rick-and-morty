@@ -8,12 +8,12 @@ let listar_productos = async(numb) => {
             responseType: 'json'
         }).then(function(res) {
             productos = res.data;
-            let boolean = true;
+            
         })
         .catch(function(err) {
             console.log(err);
-            let boolean = false
+            
         });
 
-    return productos.results, boolean;
+    return productos.results;
 };
